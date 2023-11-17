@@ -9,33 +9,35 @@
         <link rel="stylesheet" type="text/css" href="ui.css" />
     </head>
     <body>
-        <h1>SAve MY nEOCiTy!</h1>
-        <p>Enter your Neocities details below to download a copy of your site to your computer!</p>
-        <hr />
-        <span class="melonLink" data-melon-link-format="400x40"></span>
-        <hr />
-        <br />
-        <form>
-            <h2>Neocities Login:</h2>
+        <div id="wrapper">
+            <h1>SAve MY nEOCiTy!</h1>
+            <p>Enter your Neocities details below to download a copy of your site to your computer!</p>
+            <hr />
+            <span class="melonLink" data-melon-link-format="400x40"></span>
+            <hr />
             <br />
-            <span class="inputRow"><label>User:</label> <input type="text" id="user" placeholder="molly" /></span><br />
-            <span class="inputRow"><label>Pass:</label> <input type="password" id="pass" value="" /></span><br /><br />
+            <form>
+                <h2>Neocities Login:</h2>
+                <br />
+                <span class="inputRow"><label>User:</label> <input type="text" id="user" placeholder="molly" /></span><br />
+                <span class="inputRow"><label>Pass:</label> <input type="password" id="pass" value="" /></span><br /><br />
 
-            <h2>Where to Save?:</h2>
-            <button id="path_pick" type="button">Pick your save location!</button><br />
-            <b id="path_feedback">No folder selected...</b>
-            <br />
-            <br />
-            <span class="inputRow inputBG"><label>Timestamp Folder?</label> <input type="checkbox" id="do_timestamp" /></span>
-            <span class="hide inputRow inputBG"><label>ZIP it!</label> <input type="checkbox" id="do_zip" /></span>
-            <p id="plan_feedback"></p>
-            <button id="button_save" type="button">Save My Neocity Now!</button> <br />
-            <button id="button_stop" type="button">STOP! Cancel it all!</button> <br />
-            <b id="button_save_feedback">Click save download your site!</b><br /><br />
-            <span>Log:</span> <br />
-            <span class="inputRow"><textarea id="log" disabled></textarea></span><br />
-            <span id="version">Version ?</span>
-        </form>
+                <h2>Where to Save?:</h2>
+                <button id="path_pick" type="button">Pick your save location!</button><br />
+                <b id="path_feedback">No folder selected...</b>
+                <br />
+                <br />
+                <span class="inputRow inputBG"><label>Timestamp Folder?</label> <input type="checkbox" id="do_timestamp" /></span>
+                <span class="hide inputRow inputBG"><label>ZIP it!</label> <input type="checkbox" id="do_zip" /></span>
+                <p id="plan_feedback"></p>
+                <button id="button_save" type="button">Save My Neocity Now!</button> <br />
+                <button id="button_stop" type="button">STOP! Cancel it all!</button> <br />
+                <b id="button_save_feedback">Click save download your site!</b><br /><br />
+                <span>Log:</span> <br />
+                <span class="inputRow"><textarea id="log" disabled></textarea></span><br />
+                <span id="version">Version ?</span>
+            </form>
+        </div>
 
         <audio id="click-audio">
             <source src="audio/click.mp3" type="audio/mpeg" />

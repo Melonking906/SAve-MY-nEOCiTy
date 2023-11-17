@@ -2,8 +2,8 @@ body {
     font-family: basiic;
     background-color: #9f786a;
     background-image: url("images/pdj50231.gif");
-    color: rgb(255, 255, 255);
-    padding: 20px;
+    color: rgb(255, 236, 66);
+    padding: 10px;
     user-select: none;
     font-size: 0.9em;
     -webkit-app-region: drag;
@@ -46,7 +46,7 @@ h2 {
     color: rgb(255, 255, 255);
     margin: 3px 0px;
     text-shadow: 3px 3px 5px rgba(109, 87, 0, 0.276);
-    background-image: linear-gradient(90deg, rgba(94, 255, 179, 0) 0%, rgba(255, 241, 80, 1) 100%);
+    background-image: linear-gradient(90deg, rgba(94, 255, 179, 0) 0%, rgba(0, 0, 0, 1) 100%);
 }
 
 h3 {
@@ -93,6 +93,11 @@ input[type="range" i] {
 
 label {
     padding-right: 5px;
+}
+
+#wrapper {
+    margin: auto;
+    max-width: 500px;
 }
 
 #path_pick,

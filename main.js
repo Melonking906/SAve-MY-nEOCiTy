@@ -23,8 +23,15 @@ const createMainWindow = (titleBarStyle) => {
 
 app.whenReady().then(() => {
     // Menu Bar
-    let menuTemplate = [
-        { label: app.name, submenu: [{ label: "About", role: "about" }, { type: "separator" }, { label: "Quit", role: "quit" }] },
+    let menuTemplate = [];
+
+    if (process.platform == "darwin") {
+        menuTemplate.push({ label: app.name, submenu: [{ label: "About", role: "about" }, { type: "separator" }, { label: "Quit", role: "quit" }] });
+    } else {
+        menuTemplate.push({ label: "File", submenu: [{ label: "About", role: "about" }, { type: "separator" }, { label: "Quit", role: "quit" }] });
+    }
+
+    menuTemplate = menuTemplate.concat([
         {
             label: "Edit",
             submenu: [
@@ -80,14 +87,20 @@ app.whenReady().then(() => {
                     },
                 },
                 {
+                    label: "Source Code",
+                    click: function () {
+                        shell.openExternal("https://melonking.net/melon?z=/free/software/gallery-maker");
+                    },
+                },
+                {
                     label: "Email Me!",
                     click: function () {
-                        shell.openExternal("mailto:webmaster@melonking.net?subject=GalleryMakerSupport");
+                        shell.openExternal("mailto:webmaster@melonking.net?subject=SaveMyNeoCitySupport");
                     },
                 },
             ],
         },
-    ];
+    ]);
     Menu.setApplicationMenu(Menu.buildFromTemplate(menuTemplate));
 
     // Other cosmetic stuff
