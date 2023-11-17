@@ -6,11 +6,11 @@ const path = require("path");
 const downloader = require("./download.js");
 let mainWindow = undefined;
 
-const createMainWindow = () => {
+const createMainWindow = (titleBarStyle) => {
     mainWindow = new BrowserWindow({
         width: 420,
         height: 800,
-        titleBarStyle: "hidden",
+        titleBarStyle: titleBarStyle,
         webPreferences: {
             nodeIntegration: true,
             contextIsolation: false,
@@ -96,8 +96,12 @@ app.whenReady().then(() => {
     // Update version number
     storage.set("version", app.getVersion());
 
-    // Windows
-    createMainWindow();
+    // Windows - macs get cool hidden windows
+    if (process.platform == "darwin") {
+        createMainWindow("hidden");
+    } else {
+        createMainWindow("");
+    }
 
     // +++ Events +++
 
