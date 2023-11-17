@@ -1,0 +1,57 @@
+{
+    "name": "SaveMyNeocity",
+    "productName": "SAve MY nEOCiTy!",
+    "version": "0.0.1",
+    "description": "A simple program to download your neocities site!",
+    "main": "main.js",
+    "author": "Melonking",
+    "license": "MIT",
+    "devDependencies": {
+        "electron": "^27.0.0",
+        "electron-builder": "^24.6.4",
+        "electron-notarize": "^1.2.2"
+    },
+    "dependencies": {
+        "electron-json-storage": "^4.6.0",
+        "fs-extra": "^11.1.1",
+        "luxon": "^3.4.3",
+        "neocities-extended": "github:thatcomputerguy0101/neocities-node-extended",
+        "nodejs-file-downloader": "^4.12.1",
+        "path": "^0.12.7"
+    },
+    "scripts": {
+        "start": "electron .",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "pack": "electron-builder --dir",
+        "dist": "electron-builder"
+    },
+    "packageManager": "yarn@3.6.3",
+    "build": {
+        "appId": "net.melonking.${name}",
+        "afterSign": "build/notarize.js",
+        "extraResources": [
+            {
+                "from": "./assets",
+                "to": "./assets",
+                "filter": [
+                    "**/*"
+                ]
+            }
+        ],
+        "mac": {
+            "category": "public.app-category.developer-tools",
+            "hardenedRuntime": true,
+            "gatekeeperAssess": false,
+            "entitlements": "build/entitlements.mac.plist",
+            "entitlementsInherit": "build/entitlements.mac.plist",
+            "notarize": false
+        },
+        "dmg": {
+            "sign": false
+        },
+        "win": {
+            "target": "portable"
+        },
+        "linux": {}
+    }
+}
