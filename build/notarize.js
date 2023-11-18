@@ -2,7 +2,7 @@ require("dotenv").config();
 const { notarize } = require("electron-notarize");
 
 exports.default = async function notarizing(context) {
-    if (ture) {
+    if (true) {
         // Disabled because I don't have a paid apple dev account!
         return;
     }
