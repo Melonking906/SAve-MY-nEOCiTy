@@ -3,7 +3,7 @@ body {
     background-color: #9f786a;
     background-image: url("images/pdj50231.gif");
     color: rgb(255, 236, 66);
-    padding: 10px;
+    padding: 5px 10px;
     user-select: none;
     font-size: 0.9em;
     -webkit-app-region: drag;
@@ -14,7 +14,7 @@ header {
 }
 
 header h1 {
-    margin: 5px 0px;
+    margin: 3px 0px;
 }
 
 header h1 img {

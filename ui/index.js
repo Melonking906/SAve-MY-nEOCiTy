@@ -131,7 +131,7 @@ ipcRenderer.on("download-done", (event, results) => {
     if (results.result == "fail") {
         index.html.button_save.style.display = "block";
         index.html.button_stop.style.display = "none";
-        index.html.button_save_feedback.innerHTML = "NOPE! - Oh no, something went wrong, was your password correct?";
+        index.html.button_save_feedback.innerHTML = "STOPPED! - Oh no, was your password correct?";
         index.html.log.innerHTML = "Status: Not Running";
         audio.loading.pause();
         audio.error.play();

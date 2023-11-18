@@ -77,25 +77,25 @@ app.whenReady().then(() => {
                 {
                     label: "Visit the Forum Thread",
                     click: function () {
-                        shell.openExternal("https://forum.melonland.net/index.php?topic=2088");
+                        shell.openExternal("https://forum.melonland.net/index.php?topic=2288");
                     },
                 },
                 {
                     label: "Visit the Info Page",
                     click: function () {
-                        shell.openExternal("https://melonking.net/melon?z=/free/software/gallery-maker");
+                        shell.openExternal("https://melonking.net/melon?z=/free/software/neocities-downloader");
                     },
                 },
                 {
                     label: "Source Code",
                     click: function () {
-                        shell.openExternal("https://melonking.net/melon?z=/free/software/gallery-maker");
+                        shell.openExternal("https://github.com/Melonking906/SAve-MY-nEOCiTy");
                     },
                 },
                 {
                     label: "Email Me!",
                     click: function () {
-                        shell.openExternal("mailto:webmaster@melonking.net?subject=SaveMyNeoCitySupport");
+                        shell.openExternal("mailto:webmaster@melonking.net?subject=NeocityDownloaderSupport");
                     },
                 },
             ],
