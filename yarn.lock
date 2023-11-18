@@ -290,6 +290,7 @@ __metadata:
     electron-builder: ^24.6.4
     electron-json-storage: ^4.6.0
     electron-notarize: ^1.2.2
+    ffmpeg: ^0.0.4
     fs-extra: ^11.1.1
     luxon: ^3.4.3
     neocities-extended: "github:thatcomputerguy0101/neocities-node-extended"
@@ -1173,6 +1174,15 @@ __metadata:
   dependencies:
     pend: ~1.2.0
   checksum: c8585fd5713f4476eb8261150900d2cb7f6ff2d87f8feb306ccc8a1122efd152f1783bdb2b8dc891395744583436bfd8081d8e63ece0ec8687eeefea394d4ff2
+  languageName: node
+  linkType: hard
+
+"ffmpeg@npm:^0.0.4":
+  version: 0.0.4
+  resolution: "ffmpeg@npm:0.0.4"
+  dependencies:
+    when: ">= 0.0.1"
+  checksum: db07e76f03901271ff9baf9a101f07982ea8622eb32c4f5646bde40673fd6290b09bc2d36abc9a95cf24626423f6b07019e0134b3851823e5a64fd8b38d9524d
   languageName: node
   linkType: hard
 
@@ -2763,6 +2773,13 @@ __metadata:
     core-util-is: 1.0.2
     extsprintf: ^1.2.0
   checksum: 690a8d6ad5a4001672290e9719e3107c86269bc45fe19f844758eecf502e59f8aa9631b19b839f6d3dea562334884d22d1eb95ae7c863032075a9212c889e116
+  languageName: node
+  linkType: hard
+
+"when@npm:>= 0.0.1":
+  version: 3.7.8
+  resolution: "when@npm:3.7.8"
+  checksum: 1f7a3d4a125c61108c51a58b7e42350d290f0595c42fb864a38d403101b40ede28d29068c9f7a8c3e4e0128f2050f7cc68c7e82b3a39a9156f6929fc69bf42fb
   languageName: node
   linkType: hard
 
